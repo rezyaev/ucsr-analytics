@@ -29,6 +29,7 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
+				padding: 1.5rem;
 				background-color: #0f172a;
 				color: #e2e8f0;
 				font-family: "Roboto", sans-serif;
@@ -117,6 +118,45 @@
 				border-top-right-radius: 0.5rem;
 				border-bottom-right-radius: 0.5rem;
 				background-color: var(--b-site-color);
+			}
+
+			@media (max-width: 640px) {
+				body {
+					align-items: start;
+				}
+
+				.title {
+					font-size: 1.5rem;
+				}
+
+				.legend {
+					margin-bottom: 2rem;
+				}
+
+				.chart {
+					width: 100%;
+					gap: 1.5rem;
+				}
+
+				.stat-line {
+					flex-direction: column;
+					align-items: start;
+					gap: 1rem;
+				}
+
+				.map-name {
+					flex-basis: 0;
+					font-size: 1rem;
+				}
+
+				.bar {
+					height: 2rem;
+				}
+
+				.bar-a,
+				.bar-b {
+					font-size: 1rem;
+				}
 			}
 		</style>
 
