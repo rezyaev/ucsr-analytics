@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"encoding/json"
 	"fmt"
 	"io/fs"
 	"os"
@@ -55,7 +56,15 @@ func AnalyzeDemos() error {
 			combinedStats[mapName]["B"] += lostCountByBombsite["B"]
 		}
 	}
-	fmt.Printf("\nCombined Stats: %+v \n", combinedStats)
+
+	combinedStatsJSON, err := json.Marshal(combinedStats)
+	if err != nil {
+		return err
+	}
+
+	if os.WriteFile("../stats.json", combinedStatsJSON, 0644); err != nil {
+		return err
+	}
 
 	return errorGroup.Wait()
 }

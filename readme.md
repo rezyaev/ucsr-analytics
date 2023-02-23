@@ -23,4 +23,4 @@ The program will automatically download your last 100 demos and put them in fold
 2. Open `cmd` folder with `cd cmd`.
 3. Run `go run . analyze`.
 
-The program will parse and analyze your demos for stats.
+The program will parse and analyze your demos for stats and write results to `stats.json`. You can then open `index.html` for data visualization.
