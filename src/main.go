@@ -10,7 +10,7 @@ func main() {
 	command := os.Args[1]
 
 	switch command {
-	case "fetch":
+	case "download":
 		if error := FetchDemos(); error != nil {
 			log.Panic(error)
 		}
