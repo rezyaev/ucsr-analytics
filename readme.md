@@ -11,7 +11,7 @@ This program requires at least go 1.18 to run. You can download the latest versi
 ### Download
 
 1. Create `demos` folder in root, and folder for each map in `demos` folder.
-2. Create `.env` file and put `FACEIT_API_TOKEN` inside.
+2. Export `FACEIT_API_TOKEN` environment variable.
 3. Open `src` folder with `cd src`.
 4. Run `go run . download`.
 
