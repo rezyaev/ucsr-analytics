@@ -12,7 +12,7 @@ This program requires at least go 1.18 to run. You can download the latest versi
 
 1. Create `demos` folder in root, and folder for each map in `demos` folder.
 2. Export `FACEIT_API_TOKEN` environment variable.
-3. Open `src` folder with `cd src`.
+3. Open `cmd` folder with `cd cmd`.
 4. Run `go run . download`.
 
 The program will automatically download your last 100 demos and put them in folders by map.
@@ -20,7 +20,7 @@ The program will automatically download your last 100 demos and put them in fold
 ### Analyze
 
 1. Download demos.
-2. Open `src` folder with `cd src`.
+2. Open `cmd` folder with `cd cmd`.
 3. Run `go run . analyze`.
 
 The program will parse and analyze your demos for stats and write results to `stats.json`. You can then open `index.html` for data visualization.
@@ -29,7 +29,7 @@ The program will parse and analyze your demos for stats and write results to `st
 
 ```
 📦ucsr-analytics
- ┣ 📂src
+ ┣ 📂cmd
  ┃ ┣ 📜main.go              # entry point for golang script
  ┃ ┣ 📜download.go          # automatic downloading of FACEIT demos
  ┃ ┗ 📜analyze.go           # analyzing FACEIT demos and extracting statistics
